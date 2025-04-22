@@ -11,5 +11,5 @@ def interleave(*quantities):
 
     return result
 
-
-print(interleave('abc', [1, 2, 3], ('!', '@', '#')))
+if __name__ == "__main__":
+    print(interleave('abc', [1, 2, 3], ('!', '@', '#')))
