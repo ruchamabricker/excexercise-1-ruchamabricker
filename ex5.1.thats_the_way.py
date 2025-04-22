@@ -7,7 +7,7 @@ def thats_the_way(path):
 
     return [file for file in os.listdir(path) if file.startswith("S")]
 
-path = input("enter directory")
-matching_files = thats_the_way(path)
-
-print("Matching files:", matching_files)
+if __name__ == "__main__":
+    path = input("Enter directory: ")
+    matching_files = thats_the_way(path)
+    print("Matching files:", matching_files)
